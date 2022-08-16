@@ -1,0 +1,265 @@
+*{margin: 0; padding: 0;}
+a{color: black; text-decoration: none;}
+ul{list-style: none;}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+/*글꼴
+font-family: 'Bangers', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*nav꾸미기*/
+#nav{
+    width: 100%;
+    background-color: rgba(247, 239, 226, 1);
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.nav_inner{
+    width: 1320px;
+    margin: auto;
+    position: relative;
+}
+.nav_inner .logo{ 
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+.nav_inner ul{
+    float: right;
+}
+.nav_inner ul li{
+    float: left;
+}
+.nav_inner ul li a{
+    display: block;
+    font-size: 30px;
+    font-family: 'Bangers';
+    color: #222a1b;
+    padding: 50px 50px;
+}
+
+/*nav호버꾸미기*/
+.nav_inner ul li a:hover{
+    color: #e53512;
+}
+
+/*banner*/
+#banner .main{
+    margin-top: 120px;
+    display: block;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.banner_hover{
+    position: absolute;
+    top: 550px;
+    left: 0;
+    background-color: rgba(28, 17, 11, 0.35);
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    transition: all 1s;
+    opacity: 0;
+}
+.p1{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'GmarketSansMedium';
+    line-height: 72px;
+}
+
+/*banner호버*/
+#banner:hover .banner_hover{
+    opacity: 1;
+}
+
+/*현재상황..*/
+#rc{
+    width: 1320px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    height: 271px;
+}
+#rc h1{
+    font-size: 40px;
+    font-family: "Bangers";
+    color: #222a1b;
+    margin-bottom: 50px;
+}
+#rc ul{
+    width:100%; 
+}
+#rc ul li{
+    float:left;
+    width:660px;
+    height: 200px; 
+}
+#rc ul li h2{
+    padding: 90px 0 0 136px;
+    font-size: 40px;
+    color: #222a1b;
+    font-weight: 600;
+}
+.rcli1{
+    background: url(../images/people.png) no-repeat 0 0;
+}
+.rcli2{
+    background: url(../images/tree.png);
+}
+
+/*매장꾸미기*/
+#store{
+    width: 1320px;
+    height: 550px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+#store h1{
+    font-size: 40px;
+    font-family: "Bangers";
+    color: #222a1b;
+    margin-bottom: 50px;
+}
+#store ul{
+    width: 100%;
+}
+#store ul li{
+    float: left;
+    width: 400px;
+    height: 480px;
+    display: block;
+    margin-right: 60px;
+    position: relative;
+}
+#store ul li:nth-child(3){
+    margin-right: 0;
+}
+
+.box{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;/*투명*/
+    transition: all 1s;
+  }
+.box img{
+    display: block;
+}
+#store li:hover .box{
+    opacity: 1;
+    top: 0;
+}
+
+/*인테리어 디자인*/
+#id{
+    width: 1320px;
+    height: 695px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+#id h1{
+    font-size: 40px;
+    font-family: "Bangers";
+    color: #222a1b;
+    margin-bottom: 50px;
+}
+.box1_right{
+    float: left;
+}
+.leftleft{
+    float: left;
+}
+.rightright{
+    float: right;
+}
+
+/*마우스오버시 이미지 변경*/
+.box1_right img:last-child{display:none;}
+
+.box1_right:hover img:first-child{display:none;}
+
+.box1_right:hover img:last-child{display:inline-block;
+    transition: all 1s;
+
+}
+
+/* footer */
+#footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 241px;
+    background-color: #a3b495;
+} 
+.footer_inner{
+    width: 1320px;
+    margin: 50px auto;
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
+.text li{
+    float: left;
+}
+.text li a{
+    display: block;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #222a1b;
+    font-weight: 600;
+}
+.text li a:hover{
+    color: #e53512;
+    text-decoration: underline;
+}
+.mainlogo{
+    position: absolute;
+    top: 90px;
+    left: 87px;
+}
+.footer_inner p{
+    position: absolute;
+    top: 135px;
+    left: 250px;
+    font-size: 14px;
+    color: #222a1b;
+    font-weight: 600;
+    line-height: 35px;
+}
+.sns{
+    position: absolute;
+    top: 150px;
+    right: 65px;
+}
+.sns li{
+    float: left;
+}
+.sns li a{
+    display: block;
+    padding: 0 10px;
+}
+.sns li a:hover{
+    opacity: 70%;
+}

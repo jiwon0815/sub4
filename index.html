@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE U SOON-STORE</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE U SOON-ABOUT</title>
+    <!--css연결-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Banger font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Koulen&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!--noto sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Koulen&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script> <!--js 라이브러리연결-->
+        <script>
+          $(function(){
+            var count0 = count1 = count2 = 0;
+      
+            timeCounter();
+      
+            function timeCounter(){
+      
+            id0 =setInterval(count0Fn, 11.9725695);
+              //12.738853-(10/1305)*100
+            function count0Fn(){
+              count0++;
+              if(count0 >1305){
+                clearInterval(id0);
+              }
+              else{
+                $(".number").eq(0).text(count0);
+              }
+            }
+      
+            id1 =setInterval(count1Fn, 1.23915737);
+              // 10.13171226 =(10/8070)*1000
+      
+            function count1Fn(){
+              count1++;
+              if(count1 >8070){
+                clearInterval(id1);
+              }
+              else{
+                $(".number").eq(1).text(count1);
+              }
+            }
+            }
+          });
+      
+      
+        </script>
+
+        
+  <link href="css/swiper.css" rel="stylesheet" type="text/css"><!-- 수정X -->
+  <link href="css/slide.css" rel="stylesheet" type="text/css"><!--디자인에 맞게 수정-->
+
+</head>
+<body>
+    <!--nav-->
+    <div id="nav">
+        <div class="nav_inner">
+            <a href="../main/index.html" class="logo"> <img src="images/top_logo.png" alt="nav로고"></a>
+            <ul>
+                <li><a href="#none">ABOUT</a></li>
+                <li><a href="#none">MENU</a></li>
+                <li><a href="#none">CONTENTS</a></li>
+                <li><a href="#none">STORE</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--banner-->
+    <div id="banner">
+        <img class="main" src="images/banner.png" alt="">
+        <div class="banner_hover">
+            <p class="p1">
+                가장 소중한 자연을, 후대에 전하는 가치 <br>
+                사막화 방지를 위한 나무심기 정기후원에 동참하세요!
+            </p>
+        </div>
+    </div>
+    
+    <!--현재상황-->
+    <div id="rc">
+        <h1>present condition</h1>
+        <ul>
+            <li class="rcli1">
+                <h2 class="number">1305</h2>
+            </li>
+            <li class="rcli2">
+                <h2 class="number">8070</h2>
+            </li>
+        </ul>
+    </div>
+    
+    <!--store-->
+    <div id="store">
+        <h1>store</h1>
+        <ul>
+            <li><a href="#"><img src="images/b1.png" alt="매장1">
+                <div class="box">
+                    <img src="images/p1.png" alt="호버1">      
+                  </div>
+            </a></li>
+            <li><a href="#"><img src="images/b2.png" alt="매장2">
+                <div class="box">
+                    <img src="images/p2.png" alt="호버2">
+                  </div>
+            </a></li>
+            <li><a href="#"><img src="images/b3.png" alt="매장3">
+                <div class="box">
+                    <img src="images/p3.png" alt="호버3">
+                  </div>
+            </a></li>
+        </ul>
+    </div>
+    
+    <!--인테리어 디자인-->
+    <div id="id">
+        <h1>interior design</h1>
+        <div class="box1_right" >
+            <img src="images/i1.png" alt="인테리어사진1" class="leftleft">
+            <img src="images/i1-1.png" alt="호버시효과" class="leftleft">
+        </div>
+    
+        <img src="images/i2.png" alt="인테리어사진2" class="rightright">
+    </div>
+    
+    <!--footer-->
+    <div id="footer">
+        <div class="footer_inner">
+            <ul class="text">
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터 1234-5678</a></li>
+            </ul>
+            <a href="#"><img src="images/mainlogo.png" alt="메인로고" class="mainlogo"></a>
+            <p>
+                부산광역시 보호동 1004-12 <span>WEB DESIGNER</span>박지원 <br>
+                Tel.051-123-4567 E-mail.n__mlki10@naver.com
+            </p>
+            <ul class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/twitter.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/instar.png" alt="인스타">
+                        </a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/facebook.png" alt="페이스북"></a></li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
